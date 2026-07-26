@@ -32,15 +32,14 @@ O que é perceptivelmente um alto valor de acurácia, demonstrando a qualidade d
 
 Ao construir o modelo *model.h5*, foram verificados os seguintes valores de acurácia:
 
-==================================================
+___
 Acurácia de validação final: 0.9899 (perda: 0.0448)
 Acurácia de teste:           0.9910 (perda: 0.0319)
-
-==================================================
+___
 
 Assim, para finalizar, a execução do exemplo de inferência no modelo otimizado com 10 amostras de teste possuiu o seguinte resultado:
 
-==================================================
+___
 Rodando inferencia em 10 amostras usando model.tflite:
 
 Amostra 1: predito=7 | real=7
@@ -53,7 +52,6 @@ Amostra 7: predito=4 | real=4
 Amostra 8: predito=9 | real=9
 Amostra 9: predito=5 | real=5
 Amostra 10: predito=9 | real=9
-
-==================================================
+___
 
 Este e todos os outros exemplos de testes de inferência executados possuíram resultados exatos e com nenhuma discrepância ou até mesmo erro nas predições, o que confirma os dados de acurácia de 0.9899 para validação final e 0.9910 para testes.
