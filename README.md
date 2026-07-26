@@ -44,7 +44,9 @@ O que é perceptivelmente um alto valor de acurácia, demonstrando a qualidade d
 Ao otimizar o modelo para o *model.tflite*, foram obtidos os valores de tamanho de arquivo e, ao compará-los, temos:
 
 >   model.h5            :   1506.0 KB
+> 
 >   model.tflite        :    133.0 KB
+>
 >   Redução de tamanho: 91.2%
 
 
