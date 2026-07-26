@@ -1,5 +1,6 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # Desabilita o uso da GPU, utilizando somente a CPU para treinamento
+# Desabilita o uso da GPU, utilizando somente a CPU para treinamento
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  
 
 import tensorflow as tf
 from tensorflow import keras
@@ -37,6 +38,7 @@ def main():
     x_test /= 255.0
 
     model = keras.Sequential()
+    
 #   4. Construir uma CNN com 3-4 blocos Conv2D + BatchNormalization + MaxPooling2D,
 #      seguida de Dropout antes da camada de saída (10 classes, softmax)
 #      Bloco 1 -- Conv2D (32), BatchNormalization, MaxPooling2D
