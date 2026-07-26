@@ -38,6 +38,15 @@ Ao construir o modelo *model.h5*, foram verificados os seguintes valores de acur
 >
 > Acurácia de teste:           0.9910 (perda: 0.0319)
 
+O que é perceptivelmente um alto valor de acurácia, demonstrando a qualidade do modelo.
+
+
+Ao otimizar o modelo para o *model.tflite*, foram obtidos os valores de tamanho de arquivo e, ao compará-los, temos:
+
+>   model.h5            :   1506.0 KB
+>   model.tflite        :    133.0 KB
+>   Redução de tamanho: 91.2%
+
 
 Assim, para finalizar, a execução do exemplo de inferência no modelo otimizado com 10 amostras de teste possuiu o seguinte resultado:
 
