@@ -11,7 +11,7 @@ O modelo foi construído e treinado em *train_model.py*. Inicialmente, o dataset
 Foi implementado, como requerido, a técnica de EarlyStopping, encerrando o treinamento quando o desempenho para de melhorar, aguardando três épocas antes de finalizar a execução.
 
 
-# Bibliotecas utilizadas
+### Bibliotecas utilizadas
 
 Foram utilizadas as bibliotecas:
 
@@ -21,25 +21,22 @@ Foram utilizadas as bibliotecas:
 - Numpy (2.4.6)
 - Módulo OS
 
-# Técnica de otimização 
+### Técnica de otimização 
 
 O modelo foi otimizado com **Dynamic Range Quantization** após ser convertida para *.tflite* (TensorFlow Lite). Essa técnica foi escolhida pela sua facilidade de implementação e sua eficiência para sistemas Edge (acelerando a velocidade de inferência) sem necessidade de retreinamento.
 
-# Resultados Obtidos
+### Resultados Obtidos
+
+
+O que é perceptivelmente um alto valor de acurácia, demonstrando a qualidade do modelo.
 
 Ao construir o modelo *model.h5*, foram verificados os seguintes valores de acurácia:
+
 ==================================================
 Acurácia de validação final: 0.9899 (perda: 0.0448)
 Acurácia de teste:           0.9910 (perda: 0.0319)
-==================================================
-O que é perceptivelmente um alto valor de acurácia, demonstrando a qualidade do modelo.
 
-Ao otimizar o modelo para o *model.tflite*, foram obtidos os valores de tamanho de arquivo e, ao compará-los, temos:
-===================================
-  model.h5            :   1506.0 KB
-  model.tflite        :    133.0 KB
-  Redução de tamanho: 91.2%
-===================================
+==================================================
 
 Assim, para finalizar, a execução do exemplo de inferência no modelo otimizado com 10 amostras de teste possuiu o seguinte resultado:
 
@@ -56,6 +53,7 @@ Amostra 7: predito=4 | real=4
 Amostra 8: predito=9 | real=9
 Amostra 9: predito=5 | real=5
 Amostra 10: predito=9 | real=9
+
 ==================================================
 
 Este e todos os outros exemplos de testes de inferência executados possuíram resultados exatos e com nenhuma discrepância ou até mesmo erro nas predições, o que confirma os dados de acurácia de 0.9899 para validação final e 0.9910 para testes.
